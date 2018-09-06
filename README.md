@@ -1,1 +1,1 @@
-[News](https://vadymboguslavsky.github.io/news/)
+[Select](https://vadymboguslavsky.github.io/select/)
