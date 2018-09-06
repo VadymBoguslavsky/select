@@ -219,6 +219,6 @@ input[type='range']:nth-child(1)::-webkit-slider-thumb {
   top: 2px;
   width: 16px;
   height: 16px;
-  background-image: url(ic-search.svg);
+  background-image: url(../icons/ic-search.svg);
   position: absolute;
 }
