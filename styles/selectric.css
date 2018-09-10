@@ -3,7 +3,7 @@
 ======================================*/
 @font-face {
   font-family: Fira Sans;
-  src: url(../font/FiraSans-Regular.ttf); 
+  src: url(../font/FiraSans-Regular.ttf);
 }
 
 .selectric-wrapper {
@@ -192,7 +192,7 @@
   padding: 15px 14px 15px 16px;
   color: #666;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   border-bottom: 1px solid #e7ecf2;
   border-top: 1px solid #e7ecf2;
   font-family: 'Fira Sans', sans-serif;

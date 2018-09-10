@@ -2,95 +2,95 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Vinvo</title>
-	<link rel="stylesheet" href="styles/selectric.css">
-	<link rel="stylesheet" href="styles/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vinvo</title>
+  <link rel="stylesheet" href="styles/selectric.css">
+  <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
 <body>
-	<div class="wrapper">
-		<div class="form__wrapper">
-				<div class="where__to first">
-						<p>Куда вы хотите поехать</p>
-						<div class="select__first-wrapper">
-							<div class="arrow">
-								<img src="icons/ic-pointer.svg" alt="">
-							</div>
-							<select name="country" id="country">
-								<option selected disabled="disabled" hidden="hidden">Укажыте страну, город или отель</option>
-								<optgroup label="Места">
-									<option value="c1">Остров Кипр, Кипр</option>
-									<option value="c1">Пхукет, Таиланд</option>
-									<option value="c1">Коста-Рика</option>
-									<option value="c1">Крит<span>,Греция</span> <span>от $96</span></option>
-								</optgroup>
-								<optgroup label="Отели">
-									<option value="c1">Краун Плаза<span>,Москва, Россия</span></option>
-									<option value="c1">Отель Кайзерхоф, Калининград, Россия</span></option>
-									<option value="c1">Краун Плаза<span>,Москва, Россия</span></option>
-									<option value="c1">Кантри Резорт Отель,Верблики, Россия</span></option>
-								</optgroup>
-							</select>
-			
-						</div>
-			
-					</div>
-					<div class="from__to">
-						<p>Отправление</p>
-						<div class="select__second-wrapper">
-			
-							<div class="arrow">
-								<img src="icons/ic-flight.svg" alt="">
-							</div>
-							<select name="where" id="where" class="flight">
-								<option>Киев</option>
-								<option>Львов</option>
-								<option>Николаев</option>
-								<option>Одесса</option>
-							</select>
-						</div>
-					</div>
-					<div class="how__much">
-						<p>Количество ночей</p>
-						<div class="dropdown">
-							<div class="arrow">
-								<img src="icons/ic-nights.svg" alt="">
-							</div>
-							<button onclick="myFunction()" class="dropbtn" name="range_1">
-								<span id="range__from range_min">от 1 </span>
-								<span id="range__to range_max">- до 7</span>
-							</button>
-							<div id="myDropdown" class="dropdown-content">
-								<span class="from">1</span>
-								<span class="to">24</span>
-								<div class="rangeslider">
-									<input class="min" name="range_1" type="range" min="1" max="24" value="1" />
-									<input class="max" name="range_1" type="range" min="1" max="24" value="5" />
-									<span class="range_min light left">От 1</span>
-									<span class="range_max light right">- до 2</span>
-								</div>
-							</div>
-			
-						</div>
-					</div>
-					<button type="submit" class="find__tour">
-							Поиск туров
-					</button>
-		</div>
-		
-		<div class="bottom">
-				<span class="example">Например: туры в Египет</span>
-				<button class="extended">
-						Расширенный подбор
-				</button>
-			</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="js/jquery.selectric.min.js"></script>
-	<script src="js/script.js"></script>
+  <div class="wrapper">
+    <div class="form__wrapper">
+      <div class="where__to first">
+        <p>Куда вы хотите поехать</p>
+        <div class="select__first-wrapper">
+          <div class="arrow">
+            <img src="icons/ic-pointer.svg" alt="">
+          </div>
+          <select name="country" id="country">
+            <option selected disabled="disabled" hidden="hidden">Укажыте страну, город или отель</option>
+            <optgroup label="Места">
+              <option value="c1">Остров Кипр, Кипр</option>
+              <option value="c1">Пхукет, Таиланд</option>
+              <option value="c1">Коста-Рика</option>
+              <option value="c1">Крит<span>,Греция</span> <span>от $96</span></option>
+            </optgroup>
+            <optgroup label="Отели">
+              <option value="c1">Краун Плаза<span>,Москва, Россия</span></option>
+              <option value="c1">Отель Кайзерхоф, Калининград, Россия</span></option>
+              <option value="c1">Краун Плаза<span>,Москва, Россия</span></option>
+              <option value="c1">Кантри Резорт Отель,Верблики, Россия</span></option>
+            </optgroup>
+          </select>
+
+        </div>
+
+      </div>
+      <div class="from__to">
+        <p>Отправление</p>
+        <div class="select__second-wrapper">
+
+          <div class="arrow">
+            <img src="icons/ic-flight.svg" alt="">
+          </div>
+          <select name="where" id="where" class="flight">
+            <option>Киев</option>
+            <option>Львов</option>
+            <option>Николаев</option>
+            <option>Одесса</option>
+          </select>
+        </div>
+      </div>
+      <div class="how__much">
+        <p>Количество ночей</p>
+        <div class="dropdown">
+          <div class="arrow">
+            <img src="icons/ic-nights.svg" alt="">
+          </div>
+          <button onclick="myFunction()" class="dropbtn" name="range_1">
+            <span id="range__from range_min">от 1 </span>
+            <span id="range__to range_max">- до 7</span>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <span class="from">1</span>
+            <span class="to">24</span>
+            <div class="rangeslider">
+              <input class="min" name="range_1" type="range" min="1" max="24" value="1" />
+              <input class="max" name="range_1" type="range" min="1" max="24" value="5" />
+              <span class="range_min light left">От 1</span>
+              <span class="range_max light right">- до 2</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button type="submit" class="find__tour">
+        Поиск туров
+      </button>
+    </div>
+
+    <div class="bottom">
+      <span class="example">Например: туры в Египет</span>
+      <button class="extended">
+        Расширенный подбор
+      </button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="js/jquery.selectric.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
