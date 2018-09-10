@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Vinvo</title>
   <link rel="stylesheet" href="styles/selectric.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/bootstrap-select.css">
   <link rel="stylesheet" href="styles/style.css">
 
 </head>
@@ -22,16 +24,15 @@
           <select name="country" id="country">
             <option selected disabled="disabled" hidden="hidden">Укажыте страну, город или отель</option>
             <optgroup label="Места">
-              <option value="c1">Остров Кипр, Кипр</option>
-              <option value="c1">Пхукет, Таиланд</option>
-              <option value="c1">Коста-Рика</option>
-              <option value="c1">Крит<span>,Греция</span> <span>от $96</span></option>
+              <option data-content="<span class='main__place'>Остров Кипр,</span><span class='main__county'> Кипр</span><span class='main__price'>$96</span>"></option>
+              <option data-content="<span class='main__place'>Пхукет,</span><span class='main__county'> Таиланд</span class='main__price'><span class='main__price'>$130</span>"></option>
+              <option data-content="<span class='main__place'>Коста-Рика</span><span class='main__price'>$230</span>"></option>
+              <option data-content="<span class='main__place'>Пекин,</span><span class='main__county'> Китай</span><span class='main__price'>$780</span>"></option>
             </optgroup>
             <optgroup label="Отели">
-              <option value="c1">Краун Плаза<span>,Москва, Россия</span></option>
-              <option value="c1">Отель Кайзерхоф, Калининград, Россия</span></option>
-              <option value="c1">Краун Плаза<span>,Москва, Россия</span></option>
-              <option value="c1">Кантри Резорт Отель,Верблики, Россия</span></option>
+              <option data-content="<span class='main__place'>Краун Плаза,</span><span class='main__county'> Москва, Россия</span>"></option>
+              <option data-content="<span class='main__place'>Отель Кайзерхоф,</span><span class='main__county'> Калининград, Россия</span>"></option>
+              <option data-content="<span class='main__place'>Кантри Резорт Отель,</span><span class='main__county'> Верблики, Россия</span>"></option>
             </optgroup>
           </select>
         </div>
@@ -77,18 +78,25 @@
       <button type="submit" class="find__tour">
         Поиск туров
       </button>
-    </div>
 
+    </div>
     <div class="bottom">
       <span class="example">Например: туры в Египет</span>
       <button class="extended">
         Расширенный подбор
       </button>
     </div>
+
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="js/jquery.selectric.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/bootstrap-select.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    $('#country').selectpicker();
+  </script>
 </body>
 
 </html>
