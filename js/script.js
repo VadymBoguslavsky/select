@@ -46,7 +46,7 @@ function myFunction() {
     }
     var maxVal = parseInt($(maxBtn).val());
     $(range_max).html("- до " + addSeperator(maxVal * 1));
-    $('#range__to').text("- до " + addSeperator(maxVal * 1))
+    $('#range__to').text("до " + addSeperator(maxVal * 1))
 
   }
 
